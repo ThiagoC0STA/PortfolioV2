@@ -139,7 +139,7 @@ const Card = ({ title, description, icon, children }: CardProps) => {
   );
 };
 
-export const Icon = ({ className, ...props }: any) => {
+export const Icon = ({ className, ...props }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
