@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Thiago Costa - Front-end Developer Portfolio
 
-## Getting Started
+<div align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white" />
+</div>
 
-First, run the development server:
+## ✨ Features
 
+- 🎨 Modern and minimalist design
+- 🌓 Dark/Light mode support
+- 📱 Fully responsive layout
+- 🚀 Optimized performance
+- 🎭 Smooth animations with Framer Motion
+- 🌍 Interactive 3D globe visualization
+- 🎯 SEO optimized
+- 🔍 Clean and maintainable code
+
+## 🛠️ Tech Stack
+
+### Core Technologies
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animation**: Framer Motion
+- **3D**: Three.js, React Three Fiber
+
+### Development Tools
+- ESLint
+- Prettier
+- TypeScript
+- PostCSS
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18.x or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/ThiagoC0STA/portfolio.git
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+portfolio/
+├── app/                 # Next.js app directory
+├── components/          # React components
+│   ├── ui/             # UI components
+│   └── ...             # Other components
+├── public/             # Static assets
+├── styles/             # Global styles
+├── config/             # Configuration files
+└── ...                 # Other directories
+```
 
-## Learn More
+## 🎯 Key Components
 
-To learn more about Next.js, take a look at the following resources:
+- **Hero Section**: Dynamic 3D spotlight effects
+- **Projects Grid**: Interactive project showcase
+- **Experience Timeline**: Professional journey
+- **Skills Globe**: Interactive 3D globe visualization
+- **Contact Form**: Modern contact interface
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Available Scripts
 
-## Deploy on Vercel
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Connect with Me
+
+- GitHub: [@ThiagoC0STA](https://github.com/ThiagoC0STA)
+- Email: rodclikedev@gmail.com
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ by Thiago Costa</sub>
+</div>
