@@ -92,3 +92,9 @@
 body, html {
   overflow-x: hidden;
 }
+
+video {
+  max-height: 100%;
+  border-radius: 10px;
+  width: calc(100% - 100px);
+}
