@@ -6,9 +6,7 @@ const WAKATIME_USERNAME = process.env.WAKATIME_USERNAME;
 
 export async function GET() {
   try {
-    console.log('Fetching WakaTime stats...');
-    console.log('Username:', WAKATIME_USERNAME);
-    console.log('API Key:', WAKATIME_API_KEY);
+
 
     // Fetch last 7 days stats
     const statsResponse = await fetch(
@@ -21,8 +19,7 @@ export async function GET() {
       }
     );
 
-    console.log('Response status:', statsResponse.status);
-    console.log('Response headers:', Object.fromEntries(statsResponse.headers.entries()));
+
 
     if (!statsResponse.ok) {
       const errorText = await statsResponse.text();
@@ -31,7 +28,6 @@ export async function GET() {
     }
 
     const statsData = await statsResponse.json();
-    console.log('WakaTime API Response:', JSON.stringify(statsData, null, 2));
 
     // Process the data
     const bestDay = statsData.data.best_day
@@ -57,7 +53,6 @@ export async function GET() {
       })),
     };
 
-    console.log('Processed stats:', JSON.stringify(stats, null, 2));
     return NextResponse.json(stats);
   } catch (error) {
     console.error('Error fetching WakaTime stats:', error);
