@@ -14,7 +14,7 @@ const MainPage = () => {
  
       <div className="w-full max-w-7xl">
         <Hero />
-        {/* <Grid /> */}
+        <Grid />
         <ShowcaseSections />
         <RecentProjects />
         <Clients />
