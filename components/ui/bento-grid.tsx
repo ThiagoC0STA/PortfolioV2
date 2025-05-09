@@ -112,7 +112,7 @@ export const BentoGridItem = ({
           )}
         </div>
 
-        {id === 6 && <BackgroundGradientAnimation />}
+        {/* {id === 6 && <BackgroundGradientAnimation />} */}
 
         <div
           className={cn(
@@ -130,7 +130,7 @@ export const BentoGridItem = ({
 
           {id === 2 && <GridGlobe />}
 
-          {id === 3 && (
+          {/* {id === 3 && (
             <div className="absolute -right-3 flex w-fit gap-1 lg:-right-2 lg:gap-5">
               <div className="flex flex-col gap-3 lg:gap-8">
                 {techStack.stack1.map((item) => (
@@ -157,9 +157,9 @@ export const BentoGridItem = ({
                 ))}
               </div>
             </div>
-          )}
+          )} */}
 
-          {id === 6 && (
+          {/* {id === 6 && (
             <div className="group relative mt-5">
               <button
                 tabIndex={-1}
@@ -185,7 +185,7 @@ export const BentoGridItem = ({
                 asChild
               />
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>
