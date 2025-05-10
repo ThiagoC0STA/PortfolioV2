@@ -68,35 +68,6 @@ export const Hero = () => {
               </h1>
             </div>
 
-            {/* Video in mobile view */}
-            <div className="md:hidden">
-              <div className="group relative aspect-square w-full overflow-hidden rounded-3xl border-2 border-[#0B0B14]/20">
-                <div className="absolute inset-0">
-                  <ReactPlayer
-                    url="/u1.mp4"
-                    width="100%"
-                    height="100%"
-                    playing={isPlaying}
-                    volume={volume}
-                    muted={isMuted}
-                    controls={true}
-                    playsinline
-                    style={{ position: 'absolute', top: 0 }}
-                    config={{
-                      file: {
-                        attributes: {
-                          style: {
-                            objectFit: 'cover',
-                            opacity: 0.9
-                          }
-                        }
-                      }
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-
             <p className="text-base md:text-lg text-gray-400">
               I help startups and product teams turn ideas into real, high-performance applications built with clean architecture and designed to grow.
             </p>
