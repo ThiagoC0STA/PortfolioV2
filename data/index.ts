@@ -274,8 +274,8 @@ export const testimonials: Testimonial[] = [
     quote: [
       "I had the opportunity to work with Thiago and I can confidently say he is an extremely competent and committed professional. His work as a front-end developer was always marked by quality, attention to detail, and sharp technical skills.",
       "Thiago consistently delivered solutions with clarity and admirable care for the user experience. It was clear how much he mastered what he did and how seriously he took every delivery.",
-      "Beyond his technical skills, Thiago was always someone the team could rely on — for his responsibility, professionalism, and dedication in daily work.",
-      "It was a privilege to share projects with him, and I am sure he will stand out wherever he goes. He deserves all the best opportunities."
+      // "Beyond his technical skills, Thiago was always someone the team could rely on — for his responsibility, professionalism, and dedication in daily work.",
+      // "It was a privilege to share projects with him, and I am sure he will stand out wherever he goes. He deserves all the best opportunities."
     ],
     name: "Flavio Gimenez",
     title: "Software Engineer",

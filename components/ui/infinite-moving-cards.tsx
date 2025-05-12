@@ -26,11 +26,19 @@ export const InfiniteMovingCards = ({
           opacity: 0.4;
           transform: scale(0.85);
           transition: all 0.3s ease;
+          height: auto !important;
+          display: flex;
+          align-items: stretch;
         }
         .swiper-slide-active {
           opacity: 1;
           transform: scale(1);
-      }
+        }
+        .swiper-wrapper {
+          height: auto !important;
+          display: flex;
+          align-items: stretch;
+        }
       `}</style>
       <Swiper
         modules={[Autoplay]}
@@ -48,18 +56,21 @@ export const InfiniteMovingCards = ({
         }}
         loop={true}
         className={className}
+        watchSlidesProgress={true}
+        observer={true}
+        observeParents={true}
       >
         {items.map((item, idx) => (
           <SwiperSlide key={idx}>
             <div
-              className="relative w-full rounded-2xl border border-slate-800 p-6 md:p-8"
-            style={{
-              background: "rgb(4,7,29)",
-              backgroundColor:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-            }}
-          >
-            <blockquote>
+              className="relative w-full rounded-2xl border border-slate-800 px-6 py-8 md:p-8 flex flex-col"
+              style={{
+                background: "rgb(4,7,29)",
+                backgroundColor:
+                  "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+              }}
+            >
+              <blockquote className="flex flex-col flex-grow">
                 <div className="relative z-20 text-sm md:text-base font-normal leading-[1.6] text-white space-y-2 md:space-y-3">
                   {Array.isArray(item.quote)
                     ? item.quote.map((q, i) => <p key={i}>{q}</p>)
@@ -67,15 +78,15 @@ export const InfiniteMovingCards = ({
                 </div>
 
                 <div className="relative z-20 mt-4 md:mt-6 flex flex-row items-center">
-                <div className="me-3">
+                  <div className="me-3">
                     {item.image ? (
-                  <Image
-                    height={50}
-                    width={50}
+                      <Image
+                        height={50}
+                        width={50}
                         src={item.image}
                         alt={item.name}
                         className="rounded-full object-cover"
-                  />
+                      />
                     ) : (
                       <div className="flex h-[40px] w-[40px] md:h-[50px] md:w-[50px] items-center justify-center rounded-full bg-[#4933a4] text-white text-lg md:text-xl font-bold">
                         {item.name
@@ -84,19 +95,19 @@ export const InfiniteMovingCards = ({
                           .join("")}
                       </div>
                     )}
-                </div>
+                  </div>
 
-                <div className="flex flex-col gap-1">
+                  <div className="flex flex-col gap-1">
                     <span className="text-lg md:text-xl font-bold leading-[1.6] text-white">
-                    {item.name}
-                  </span>
+                      {item.name}
+                    </span>
 
                     <span className="text-xs md:text-sm font-normal leading-[1.6] text-white-200">
-                    {item.title}
-                  </span>
+                      {item.title}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </blockquote>
+              </blockquote>
             </div>
           </SwiperSlide>
         ))}
